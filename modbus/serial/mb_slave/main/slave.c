@@ -4,9 +4,12 @@
    software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
    CONDITIONS OF ANY KIND, either express or implied.
 */
+#include <string.h>
 #include <stdio.h>
 #include <stdint.h>
+#include "freertos/FreeRTOS.h"
 #include "esp_err.h"
+#include "esp_modbus_slave.h"
 #include "mbcontroller.h"       // for mbcontroller defines and api
 #include "modbus_params.h"      // for modbus parameters structures
 #include "esp_log.h"            // for log_write
